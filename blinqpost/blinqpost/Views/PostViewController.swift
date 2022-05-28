@@ -58,15 +58,8 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         let data = post.post[indexPath.row]
         
 
-        //cell.display.image = UIImage(systemName: data.display)
-//        cell.username.text = data.username
-//        cell.timestamp.text = data.timestamp
-    //    cell.playVideo()
-
         cell.setup(with: data)
-//        if data.video == true {
-//            let tap = UITapGestureRecognizer(target: self, action: #selector(playVideo(urlstring:)))
-//        }
+
         return cell
     }
     

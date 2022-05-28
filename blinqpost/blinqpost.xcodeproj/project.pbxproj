@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B480CFF4283FB0070045C549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CFF3283FB0070045C549 /* AppDelegate.swift */; };
 		B480CFF6283FB0070045C549 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CFF5283FB0070045C549 /* SceneDelegate.swift */; };
-		B480CFF8283FB0070045C549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480CFF7283FB0070045C549 /* ViewController.swift */; };
 		B480CFFB283FB0070045C549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B480CFF9283FB0070045C549 /* Main.storyboard */; };
 		B480CFFD283FB0080045C549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B480CFFC283FB0080045C549 /* Assets.xcassets */; };
 		B480D000283FB0080045C549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B480CFFE283FB0080045C549 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 		B480D00D283FB4640045C549 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B480D00C283FB4640045C549 /* FirebaseFirestore */; };
 		B480D00F283FE7650045C549 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B480D00E283FE7640045C549 /* GoogleService-Info.plist */; };
 		B480D0162840B4440045C549 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480D0152840B4440045C549 /* PostViewModel.swift */; };
-		B480D018284152B10045C549 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480D017284152B10045C549 /* PostCollectionViewCell.swift */; };
 		B480D01B2841FCFC0045C549 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480D01A2841FCFB0045C549 /* PostViewController.swift */; };
 		B480D01D284206A50045C549 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480D01C284206A50045C549 /* PostCell.swift */; };
 		B480D01F2842500E0045C549 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480D01E2842500E0045C549 /* PostModel.swift */; };
@@ -29,14 +27,12 @@
 		B480CFF0283FB0070045C549 /* blinqpost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blinqpost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B480CFF3283FB0070045C549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B480CFF5283FB0070045C549 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B480CFF7283FB0070045C549 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B480CFFA283FB0070045C549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B480CFFC283FB0080045C549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B480CFFF283FB0080045C549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B480D001283FB0080045C549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B480D00E283FE7640045C549 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B480D0152840B4440045C549 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
-		B480D017284152B10045C549 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		B480D01A2841FCFB0045C549 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		B480D01C284206A50045C549 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B480D01E2842500E0045C549 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -100,8 +96,6 @@
 		B480D0112840ABE30045C549 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B480D017284152B10045C549 /* PostCollectionViewCell.swift */,
-				B480CFF7283FB0070045C549 /* ViewController.swift */,
 				B480D01A2841FCFB0045C549 /* PostViewController.swift */,
 				B480D01C284206A50045C549 /* PostCell.swift */,
 				B480D02028425B230045C549 /* PlayerView.swift */,
@@ -210,9 +204,7 @@
 				B480D02128425B230045C549 /* PlayerView.swift in Sources */,
 				B480D0162840B4440045C549 /* PostViewModel.swift in Sources */,
 				B480D01F2842500E0045C549 /* PostModel.swift in Sources */,
-				B480CFF8283FB0070045C549 /* ViewController.swift in Sources */,
 				B480D01B2841FCFC0045C549 /* PostViewController.swift in Sources */,
-				B480D018284152B10045C549 /* PostCollectionViewCell.swift in Sources */,
 				B480CFF4283FB0070045C549 /* AppDelegate.swift in Sources */,
 				B480CFF6283FB0070045C549 /* SceneDelegate.swift in Sources */,
 				B480D01D284206A50045C549 /* PostCell.swift in Sources */,
