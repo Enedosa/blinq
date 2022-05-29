@@ -21,6 +21,8 @@
 		B480D01F2842500E0045C549 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480D01E2842500E0045C549 /* PostModel.swift */; };
 		B480D02128425B230045C549 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B480D02028425B230045C549 /* PlayerView.swift */; };
 		B481D38D2842A05B00B281C2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B481D38C2842A05B00B281C2 /* Kingfisher */; };
+		B481D3942843FD8E00B281C2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B481D3932843FD8E00B281C2 /* RxCocoa */; };
+		B481D3962843FD8E00B281C2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B481D3952843FD8E00B281C2 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 			files = (
 				B481D38D2842A05B00B281C2 /* Kingfisher in Frameworks */,
 				B480D00B283FB4640045C549 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				B481D3962843FD8E00B281C2 /* RxSwift in Frameworks */,
+				B481D3942843FD8E00B281C2 /* RxCocoa in Frameworks */,
 				B480D00D283FB4640045C549 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +144,8 @@
 				B480D00A283FB4640045C549 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				B480D00C283FB4640045C549 /* FirebaseFirestore */,
 				B481D38C2842A05B00B281C2 /* Kingfisher */,
+				B481D3932843FD8E00B281C2 /* RxCocoa */,
+				B481D3952843FD8E00B281C2 /* RxSwift */,
 			);
 			productName = blinqpost;
 			productReference = B480CFF0283FB0070045C549 /* blinqpost.app */;
@@ -172,6 +178,7 @@
 			packageReferences = (
 				B480D009283FB4640045C549 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				B481D38B2842A05B00B281C2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B481D3922843FD8E00B281C2 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = B480CFF1283FB0070045C549 /* Products */;
 			projectDirPath = "";
@@ -445,6 +452,14 @@
 				kind = branch;
 			};
 		};
+		B481D3922843FD8E00B281C2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -462,6 +477,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B481D38B2842A05B00B281C2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		B481D3932843FD8E00B281C2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B481D3922843FD8E00B281C2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B481D3952843FD8E00B281C2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B481D3922843FD8E00B281C2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
