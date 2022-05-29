@@ -1,9 +1,4 @@
-//
-//  PostViewController.swift
-//  blinqpost
-//
-//  Created by Decagon on 28/05/2022.
-//
+
 import UIKit
 import AVKit
 
@@ -17,7 +12,6 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
         CollectionView.dataSource = self
         CollectionView.delegate = self
     
@@ -71,6 +65,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             guard let display = post.display else {
                 return
             }
+            
             playVideo(urlstring: display)
         }
     }
@@ -80,7 +75,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: CollectionView.frame.width, height: 200)
+        return CGSize(width: CollectionView.frame.width, height: 280)
     }
 }
 

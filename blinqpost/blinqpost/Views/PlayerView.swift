@@ -1,9 +1,3 @@
-//
-//  PlayerView.swift
-//  blinqpost
-//
-//  Created by Decagon on 28/05/2022.
-//
 
 import Foundation
 import AVKit
