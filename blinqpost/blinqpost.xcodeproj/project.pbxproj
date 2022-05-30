@@ -23,6 +23,7 @@
 		B481D38D2842A05B00B281C2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B481D38C2842A05B00B281C2 /* Kingfisher */; };
 		B481D3942843FD8E00B281C2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B481D3932843FD8E00B281C2 /* RxCocoa */; };
 		B481D3962843FD8E00B281C2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B481D3952843FD8E00B281C2 /* RxSwift */; };
+		B481D3982845038900B281C2 /* RxSwiftTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481D3972845038900B281C2 /* RxSwiftTry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B480D01C284206A50045C549 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B480D01E2842500E0045C549 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		B480D02028425B230045C549 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		B481D3972845038900B281C2 /* RxSwiftTry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B480D01A2841FCFB0045C549 /* PostViewController.swift */,
 				B480D01C284206A50045C549 /* PostCell.swift */,
 				B480D02028425B230045C549 /* PlayerView.swift */,
+				B481D3972845038900B281C2 /* RxSwiftTry.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B480D02128425B230045C549 /* PlayerView.swift in Sources */,
+				B481D3982845038900B281C2 /* RxSwiftTry.swift in Sources */,
 				B480D0162840B4440045C549 /* PostViewModel.swift in Sources */,
 				B480D01F2842500E0045C549 /* PostModel.swift in Sources */,
 				B480D01B2841FCFC0045C549 /* PostViewController.swift in Sources */,
