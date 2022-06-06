@@ -4,7 +4,7 @@ import AVKit
 
 class ViewController: UIViewController, AVPlayerViewControllerDelegate {
     var post = PostViewModel()
-    let avPlayerController = AVPlayerViewController()
+    let playerLayer = AVPlayerLayer()
 
   
     @IBOutlet weak var CollectionView: UICollectionView!
@@ -19,6 +19,7 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
         populateCollectionView()
     }
     
+    
     func populateCollectionView() {
         post.completion = { [weak self] in
             self?.CollectionView.reloadData()
@@ -29,17 +30,20 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
             return
         }
         let player = AVPlayer(url: url)
-        avPlayerController.player = player
-        avPlayerController.delegate = self
-        avPlayerController.allowsPictureInPicturePlayback = true
-        avPlayerController.player?.play()
-        self.present(avPlayerController, animated: true)
-        
+        playerLayer.player = player
+//        playerLayer.delegate = self
+//        playerLayer.allowsPictureInPicturePlayback = true
+//        playerLayer.player?.play()
+//        self.present(playerLayer, animated: true)
+        playerLayer.frame = self.view.bounds
+        self.view.layer.addSublayer(playerLayer)
+        player.play()
     }
 }
 
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         post.post.count
     }

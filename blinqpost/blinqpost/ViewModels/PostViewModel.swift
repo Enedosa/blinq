@@ -11,8 +11,9 @@ class PostViewModel {
     var post = [PostModel]()
     
     var completion:(() -> Void)?
+    
     func getData() {
-        var data = [String:Any]()
+        var data = [String: Any]()
         let database = Firestore.firestore()
         
         database.collection("post").getDocuments() { (querySnapshot, err) in
