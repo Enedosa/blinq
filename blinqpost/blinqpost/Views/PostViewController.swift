@@ -3,7 +3,7 @@ import UIKit
 import AVKit
 
 class ViewController: UIViewController, AVPlayerViewControllerDelegate {
-    var post = PostViewModel()
+    var postViewModel = PostViewModel()
     let playerLayer = AVPlayerLayer()
 
   
@@ -15,13 +15,13 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
         CollectionView.dataSource = self
         CollectionView.delegate = self
     
-        post.getData()
+        postViewModel.getData()
         populateCollectionView()
     }
     
     
     func populateCollectionView() {
-        post.completion = { [weak self] in
+        postViewModel.completion = { [weak self] in
             self?.CollectionView.reloadData()
         }
     }
@@ -45,7 +45,7 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        post.post.count
+        postViewModel.post.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -53,7 +53,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             return UICollectionViewCell()
         }
 
-        let data = post.post[indexPath.row]
+        let data = postViewModel.post[indexPath.row]
         
 
         cell.setup(with: data)
@@ -64,7 +64,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         
-        let post = post.post[indexPath.row]
+        let post = postViewModel.post[indexPath.row]
         if post.video == true {
             guard let display = post.display else {
                 return
